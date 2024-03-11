@@ -63,21 +63,21 @@ nav li {
   background-color: rgba(0, 0, 0, 0.514);
   border-radius: 10px;
   box-shadow: rgb(14, 14, 14) -4px -4px 8px;
-  padding: 30px;
+  padding: 15px 30px 30px;
   text-align: center;
   /* border: 2px solid red; */
 }
 
 .home__header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .home__header h1 {
   font-size: 2.3em;
   font-family: "Dancing Script",
     cursive;
-  padding-bottom: 15px;
+  padding-bottom: 8px;
   text-transform: capitalize;
   font-weight: bold;
 }
@@ -92,6 +92,7 @@ nav li {
   padding: 10px;
   border-radius: inherit;
   box-shadow: rgb(0, 0, 0) 2px -2px 4px;
+  margin-bottom: 10px;
 }
 
 .seleccion h3 {
@@ -134,7 +135,7 @@ nav li {
   display: flex;
   flex-direction: column;
   box-shadow: black 4px 4px 4px;
-  margin: 5px;
+  margin: 15px 5px 5px;
   border-radius: inherit;
 }
 
@@ -192,6 +193,10 @@ nav li {
   font-family: "Dancing Script", cursive;
   font-size: 2em;
   padding-bottom: 20px;
+}
+
+#requisitos ol {
+  list-style: none;
 }
 
 /*Fin de la seccion de los requisitos*/
@@ -253,6 +258,10 @@ footer p {
   display: none;
 }
 
+/* *****************************************************
+    FIN DE LOS ESTILOS EN LA VERSION MOVIL(TODO: ajustar de manera mas precisa las medidas de los contenidos).
+***************************************************** */
+
 /*Inicio de los media queries*/
 /* Estilos para pantallas de 450px a 700px */
 @media screen and (min-width: 500px) and (max-width: 740px) {
@@ -266,9 +275,13 @@ footer p {
   .nav__link {
     padding: 0 8px;
   }
+
+  .box__container {
+    margin: 60px;
+  }
 }
 
-@media (min-width: 741px) {
+@media (min-width: 741px)and (max-width: 1020px) {
 
   /*Inicio de los cambios en el navbar*/
   nav {
@@ -278,7 +291,7 @@ footer p {
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.514) 4px 4px 2px;
-    padding: 20px 25px 0;
+    padding: 18px 25px;
     display: flex;
     justify-content: space-between;
   }
@@ -294,7 +307,7 @@ footer p {
   }
 
   .home__header {
-    margin: 60px;
+    margin: 20px;
   }
 
   .home__header h1 {
@@ -316,7 +329,8 @@ footer p {
     font-size: 18px;
   }
 
-  .home__div {
+  /* Remplazar home_div por encripatar o algo mas adecuado */
+  .seccion__encriptar {
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -325,7 +339,7 @@ footer p {
     width: 60%;
   }
 
-  .home__div .box__container {
+  .seccion__encriptar .box__container {
     width: 57%;
     margin: 10px;
     padding: 20px;
@@ -359,3 +373,91 @@ footer p {
 }
 
 /*Fin de los cambios en el navbar*/
+
+@media (min-width: 1021px) {
+  nav {
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 80%;
+    margin: 0 auto 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.514) 4px 4px 2px;
+    padding: 18px 25px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__links {
+    display: inherit;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__link {
+    padding: 0 10px;
+  }
+
+  .home__header {
+    margin: 20px;
+  }
+
+  .home__header h1 {
+    font-size: 2.8em;
+  }
+
+  .box__container {
+    width: 60%;
+    margin: 80px auto;
+  }
+
+  .seleccion h3 {
+    font-size: 22px;
+  }
+
+  .btns {
+    width: 48%;
+    padding: 2px;
+    font-size: 18px;
+  }
+
+  .seccion__encriptar {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 40px;
+    height: 500px;
+    width: 60%;
+  }
+
+  .seccion__encriptar .box__container {
+    width: 57%;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .box__codificar {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box__codificar>* {
+    flex-grow: 1;
+  }
+
+  .box__codificar button {
+    max-height: 45px;
+  }
+
+  .box-copiar img {
+    display: block;
+  }
+
+  .box-copiar textarea {
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+  }
+}

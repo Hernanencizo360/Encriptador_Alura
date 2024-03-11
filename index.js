@@ -36,7 +36,7 @@ function ocultarContenido(id) {
 }
 
 function dirigirASeccion() {
-  let irASeccion = document.getElementById("home_div");
+  let irASeccion = document.getElementById("seccion__encriptar");
   irASeccion.scrollIntoView({ behavior: "smooth" });
 }
 

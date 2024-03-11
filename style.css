@@ -1,0 +1,358 @@
+/*Importacion de recursos*/
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Normalizacion de la pagina */
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair' sans-serif;
+  color: rgba(255, 255, 255);
+  text-shadow: rgb(0, 0, 0) -1px -1px 2px;
+  overflow-wrap: break-word;
+}
+
+body {
+  background-image: linear-gradient(to bottom,
+      rgba(255, 255, 255, 0.685),
+      rgba(9, 23, 100, 0.904)), url("asetts/crtpex2.jpg");
+
+}
+
+/*Estilos barra de navegacion*/
+nav {
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+
+.nav__logo {
+  padding-bottom: 10px;
+}
+
+.nav__logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav__links {
+  list-style: none;
+  font-size: 20px;
+}
+
+nav li {
+  padding-bottom: 10px;
+}
+
+.nav__link {
+  text-decoration: none;
+  font-weight: bold;
+  text-shadow: rgb(0, 0, 0) -1px -1px 2px;
+  padding-top: 7px;
+  text-transform: uppercase;
+}
+
+.nav__link:hover {
+  color: rgba(0, 0, 0, 0.904);
+  text-decoration: 2px solid rgba(0, 0, 0, 0.904) overline;
+}
+
+/* Estilos del titulo y parrafo */
+.home__header {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 0 30px;
+}
+
+.home__header h1 {
+  font-size: 2.3em;
+  font-family: "Dancing Script",
+    cursive;
+  padding-bottom: 15px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.home__header p {
+  font-size: 18px;
+  font-style: italic;
+}
+
+.box__container {
+  margin: 40px;
+  background-color: rgba(0, 0, 0, 0.514);
+  border-radius: 10px;
+  box-shadow: rgb(14, 14, 14) -4px -4px 8px;
+  padding: 30px;
+  text-align: center;
+}
+
+.seleccion {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.514);
+}
+
+.seleccion h3 {
+  font-size: 18px;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+
+.btns__container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.btns {
+  border: 0;
+  width: 40%;
+  min-height: 40px;
+  padding: 6px;
+  margin: 8 auto;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #287ecb;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: black 2px 2px 2px;
+}
+
+.btns:hover {
+  background-color: #26552d;
+  cursor: pointer;
+}
+
+/*Fin del div de seleccion.*/
+
+/* Inicio del articulo encriptar */
+.box__codificar {
+  display: flex;
+  flex-direction: column;
+  box-shadow: black 4px 4px 4px;
+  margin: 5px;
+  border-radius: inherit;
+}
+
+.box__codificar textarea {
+  color: black;
+  text-shadow: initial;
+  padding: 30px;
+  text-align: center;
+  border: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 120px;
+}
+
+.box__codificar button {
+  border: 0;
+  min-height: 35px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: rgba(0, 94, 31, 1);
+  text-transform: uppercase;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.box__codificar button:hover {
+  background-color: rgba(165, 0, 0, 1);
+  cursor: pointer;
+}
+
+.box-copiar img {
+  display: none;
+  height: 200px;
+  width: auto;
+  background-color: rgb(255, 255, 255);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.box-copiar textarea {
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+/*Fin de las configuracion de encriptar*/
+
+/*Inicio de la seccion de los requisitos*/
+#requisitos {
+  text-align: center;
+  padding: 40px;
+}
+
+.subtitulo {
+  font-family: "Dancing Script", cursive;
+  font-size: 2em;
+  padding-bottom: 20px;
+}
+
+/*Fin de la seccion de los requisitos*/
+
+/*Inicio de la seccion About*/
+.box__container h4 {
+  margin-bottom: 20px;
+}
+
+/*Fin de la seccion About*/
+
+/*Inicio del footer*/
+footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.322);
+}
+
+footer h2 {
+  padding: 30px 0px 4px;
+}
+
+.box__contact {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 30px;
+}
+
+.box__contact img {
+  width: 55px;
+  height: 55px;
+  box-shadow: rgb(243, 243, 243) -1px 1px 3px;
+  border-radius: 50%;
+  padding: 6px;
+  margin: 3px;
+}
+
+footer a:hover {
+  background-color: rgba(255, 255, 255, 0.507);
+  border-radius: 10%;
+  box-shadow: black 4px 4px 2px;
+}
+
+footer p {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: xx-small;
+  letter-spacing: 2px;
+  line-height: 16px;
+}
+
+.copyright {
+  width: 100%;
+  background-color: #ffffff1c;
+  padding: 15px;
+}
+
+/*Fin del footer*/
+.oculta {
+  display: none;
+}
+
+/*Inicio de los media queries*/
+/* Estilos para pantallas de 450px a 700px */
+@media screen and (min-width: 500px) and (max-width: 740px) {
+
+  .nav__links {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+
+  .nav__link {
+    padding: 0 8px;
+  }
+}
+
+@media (min-width: 741px) {
+
+  /*Inicio de los cambios en el navbar*/
+  nav {
+    background-color: rgba(0, 0, 0, 0.514);
+    width: 80%;
+    margin: 0 auto 40px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.514) 4px 4px 2px;
+    padding: 20px 25px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__links {
+    display: inherit;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav__link {
+    padding: 0 10px;
+  }
+
+  .home__header {
+    margin: 60px;
+  }
+
+  .home__header h1 {
+    font-size: 2.8em;
+  }
+
+  .box__container {
+    width: 60%;
+    margin: 80px auto;
+  }
+
+  .seleccion h3 {
+    font-size: 22px;
+  }
+
+  .btns {
+    width: 48%;
+    padding: 2px;
+    font-size: 18px;
+  }
+
+  .home__div {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0 40px;
+    height: 500px;
+    width: 60%;
+  }
+
+  .home__div .box__container {
+    width: 57%;
+    margin: 10px;
+    padding: 20px;
+  }
+
+  .box__codificar {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .box__codificar>* {
+    flex-grow: 1;
+  }
+
+  .box__codificar button {
+    max-height: 45px;
+  }
+
+  .box-copiar img {
+    display: block;
+  }
+
+  .box-copiar textarea {
+    border-top-left-radius: unset;
+    border-top-right-radius: unset;
+  }
+}
+
+/*Fin de los cambios en el navbar*/

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador</title>
+    <link rel="icon" href="asetts/favicon2.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav__logo">
+          <img src="asetts/logo.png" alt="logo" />
+        </div>
+        <ul class="nav__links">
+          <li>
+            <a href="#home" class="nav__link">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li>
+            <a href="#requisitos" class="nav__link">Requisitos</a>
+          </li>
+          <li>
+            <a href="#contact" class="nav__link">Contactos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <header class="home__header">
+          <h1>Bienvenido A Cryptocryptex</h1>
+          <p>
+            Su lugar favorito para encriptar y desencriptar texto. Lorem ipsum
+            dolor sit.
+          </p>
+        </header>
+        <article>
+          <div class="seleccion box__container">
+            <h3 id="seleccion_h3" class="">
+              Por favor seleccione la opccion que desea para continuar.
+            </h3>
+            <div class="btns__container">
+              <button class="btns" onclick="mostrarArticleEncriptar()">
+                Encriptar
+              </button>
+              <button class="btns" onclick="mostrarArticleDesencriptar()">
+                Desencriptar
+              </button>
+            </div>
+          </div>
+        </article>
+        <div class="home__div" id="home_div">
+          <article class="box__container oculta" id="article_encriptar">
+            <div class="box__codificar">
+              <textarea
+                name=""
+                id="texto_a_encriptar"
+                cols="30"
+                rows="10"
+                placeholder="Ingrese los datos a encriptar"
+              ></textarea>
+              <button onclick="encriptar()">Encriptar</button>
+            </div>
+          </article>
+
+          <article class="box__container oculta" id="article_desencriptar">
+            <div class="box__codificar">
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="10"
+                placeholder="Ingrese los datos a desencriptar"
+              ></textarea>
+              <button>Desencriptar</button>
+            </div>
+          </article>
+          <article class="box__container oculta" id="article_copiar">
+            <div class="box__codificar box-copiar">
+              <img src="asetts/Muñeco.svg" alt="imagen_muñeco" />
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+              <button>copiar</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="requisitos" class="box__container">
+        <h2 class="subtitulo">Requisitos</h2>
+        <ol>
+          <li>Funcionamiento exclusivo con letras minúsculas.</li>
+          <li>
+            No se deben utilizar letras con acentos ni caracteres especiales.
+          </li>
+        </ol>
+      </section>
+
+      <section id="about" class="box__container">
+        <h2 class="subtitulo">Sobre El Desafío</h2>
+        <h4>¡Bienvenidos A Nuestro Emocionante Desafío De Encriptación!</h4>
+        <p>
+          Este proyecto es parte del programa ONE-G6-Alura Latam y se extiende
+          por un periodo de cuatro semanas. Durante este tiempo, los
+          participantes tienen la oportunidad de crear una aplicación que
+          permitirá la encriptación y desencriptación de mensajes de manera
+          única. Este desafío no solo pone a prueba las habilidades adquiridas
+          en la etapa de Principiante en Programación, sino que también brinda
+          la oportunidad de explorar y desarrollar nuevas habilidades.
+        </p>
+      </section>
+    </main>
+
+    <!-- Aqui trabajamos -->
+    <footer>
+      <h2 class="subtitulo">Contactos</h2>
+      <div id="contact" class="box__contact">
+        <a href="#">
+          <img src="asetts/github_icon.svg" alt="github_icon" />
+        </a>
+        <a href="#">
+          <img src="asetts/icons8-telegram.svg" alt="telegram_icon" />
+        </a>
+
+        <a href="#">
+          <img src="asetts/instagram_icon.svg" alt="instagram_icon" />
+        </a>
+
+        <a href="#">
+          <img src="asetts/linkedin_icon.svg" alt="linkedin_icon" />
+        </a>
+      </div>
+      <p class="copyright">
+        TODOS LOS DERECHOS RESERVADOS <br />
+        © 2024 - 2030 | HERNAN ELADIO ENCIZO
+      </p>
+    </footer>
+    <!-- Hasta aqui trabajamos -->
+
+    <script src="index.js"></script>
+  </body>
+</html>

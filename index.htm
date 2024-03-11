@@ -31,7 +31,8 @@
     </header>
 
     <main>
-      <section id="home">
+      <!-- Aqui trabajamos -->
+      <section id="home" class="box__container">
         <header class="home__header">
           <h1>Bienvenido A Cryptocryptex</h1>
           <p>
@@ -39,55 +40,56 @@
             dolor sit.
           </p>
         </header>
-        <article>
-          <div class="seleccion box__container">
-            <h3 id="seleccion_h3" class="">
-              Por favor seleccione la opccion que desea para continuar.
-            </h3>
-            <div class="btns__container">
-              <button class="btns" onclick="mostrarArticleEncriptar()">
-                Encriptar
-              </button>
-              <button class="btns" onclick="mostrarArticleDesencriptar()">
-                Desencriptar
-              </button>
-            </div>
+
+        <article class="seleccion">
+          <h3 id="seleccion_h3" class="">
+            Por favor seleccione la opccion que desea para continuar.
+          </h3>
+          <div class="btns__container">
+            <button class="btns" onclick="mostrarArticleEncriptar()">
+              Encriptar
+            </button>
+            <button class="btns" onclick="mostrarArticleDesencriptar()">
+              Desencriptar
+            </button>
           </div>
         </article>
-        <div class="home__div" id="home_div">
-          <article class="box__container oculta" id="article_encriptar">
-            <div class="box__codificar">
-              <textarea
-                name=""
-                id="texto_a_encriptar"
-                cols="30"
-                rows="10"
-                placeholder="Ingrese los datos a encriptar"
-              ></textarea>
-              <button onclick="encriptar()">Encriptar</button>
-            </div>
-          </article>
+      </section>
+      <!-- Hasta aqui trabajamos -->
 
-          <article class="box__container oculta" id="article_desencriptar">
-            <div class="box__codificar">
-              <textarea
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-                placeholder="Ingrese los datos a desencriptar"
-              ></textarea>
-              <button>Desencriptar</button>
-            </div>
-          </article>
-          <article class="box__container oculta" id="article_copiar">
-            <div class="box__codificar box-copiar">
-              <img src="asetts/Muñeco.svg" alt="imagen_muñeco" />
-              <textarea name="" id="" cols="30" rows="10"></textarea>
-              <button>copiar</button>
-            </div>
-          </article>
-        </div>
+      <section class="home__div" id="home_div">
+        <article class="box__container oculta" id="article_encriptar">
+          <div class="box__codificar">
+            <textarea
+              name=""
+              id="texto_a_encriptar"
+              cols="30"
+              rows="10"
+              placeholder="Ingrese los datos a encriptar"
+            ></textarea>
+            <button onclick="encriptar()">Encriptar</button>
+          </div>
+        </article>
+
+        <article class="box__container oculta" id="article_desencriptar">
+          <div class="box__codificar">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Ingrese los datos a desencriptar"
+            ></textarea>
+            <button>Desencriptar</button>
+          </div>
+        </article>
+        <article class="box__container oculta" id="article_copiar">
+          <div class="box__codificar box-copiar">
+            <img src="asetts/Muñeco.svg" alt="imagen_muñeco" />
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button>copiar</button>
+          </div>
+        </article>
       </section>
 
       <section id="requisitos" class="box__container">
@@ -99,7 +101,6 @@
           </li>
         </ol>
       </section>
-
       <section id="about" class="box__container">
         <h2 class="subtitulo">Sobre El Desafío</h2>
         <h4>¡Bienvenidos A Nuestro Emocionante Desafío De Encriptación!</h4>
@@ -115,7 +116,6 @@
       </section>
     </main>
 
-    <!-- Aqui trabajamos -->
     <footer>
       <h2 class="subtitulo">Contactos</h2>
       <div id="contact" class="box__contact">
@@ -139,7 +139,6 @@
         © 2024 - 2030 | HERNAN ELADIO ENCIZO
       </p>
     </footer>
-    <!-- Hasta aqui trabajamos -->
 
     <script src="index.js"></script>
   </body>

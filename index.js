@@ -1,9 +1,7 @@
-let id_article_encriptar = "article_encriptar",
-  id_article_desencriptar = "article_desencriptar",
-  id_article_copiar = "article_copiar";
-
 /********************************************
- * Funciones para mostrar la seccion oculta (sección encriptar) del HTML -> Éstas f(x) estan asociadas a los btns de la sección Home.
+ * Funciones para mostrar la seccion oculta
+ * (sección encriptar) del HTML -> Éstas f(x)
+ * estan asociadas a los btns de la sección Home.
  ****************************************** */
 function mostrarArticleEncriptar() {
   let articleEncriptar = document.getElementById("article_encriptar");
@@ -19,9 +17,9 @@ function mostrarArticleEncriptar() {
 }
 
 function mostrarArticleDesencriptar() {
-  let article = document.getElementById(id_article_desencriptar);
+  let article = document.getElementById("article_desencriptar");
 
-  ocultarContenido(id_article_encriptar);
+  ocultarContenido("article_desencriptar");
   article.classList.remove("oculta");
 
   mostrarArticleCopiar();
@@ -43,25 +41,22 @@ function mostrarArticleCopiar() {
 
 function dirigirASeccion() {
   let irASeccion = document.getElementById("seccion__encriptar");
-
   irASeccion.scrollIntoView({ behavior: "smooth" });
 }
 
 /*********************************************
- * MOSTRADAS LAS SECCIONES EMPEZAMOS A CAPTURAR LOS DATOS INGRESADOS POR EL USUARIO
+ * MOSTRADAS LAS SECCIONES EMPEZAMOS A
+ * CAPTURAR LOS DATOS INGRESADOS POR EL USUARIO
  ********************************************/
 
-/*
-Las "llaves" de encriptación que utilizaremos son las siguientes:
-La letra "a" es convertida para "ai"
-La letra "e" es convertida para "enter"
-La letra "i" es convertida para "imes"
-La letra "o" es convertida para "ober"
-La letra "u" es convertida para "ufat" 
-*/
-
 //DECLARACIÓN DE VARIABLES Y CONSTANTES:
-const llaves = ["ai", "enter", "imes", "ober", "ufat"];
+const llave_valor = [
+  ["a", "ai"],
+  ["e", "enter"],
+  ["i", "imes"],
+  ["o", "ober"],
+  ["u", "ufat"],
+];
 
 let texto_a_encriptar, texto_a_desencriptar;
 
@@ -73,9 +68,10 @@ function encriptar() {
     //validar el texto.
     validarTexto(texto_a_encriptar);
 
-    //Si es valido remplazar los valores;
-    /* Por ahor lo mostramos solo por consola */
-    console.log(`El texto a encriptar es: ${texto_a_encriptar}`);
+    remplazarVocales();
+    mostrarResultado(texto_a_encriptar);
+
+    /*Funcion para retornar el valor al texarea copiar* */
   } catch (error) {
     alert(error.message);
     limpiarTextarea("texto_a_encriptar");
@@ -156,4 +152,26 @@ function contieneCaracteresEspeciales(texto) {
 function limpiarTextarea(id) {
   let textarea = document.getElementById(id);
   textarea.value = "";
+}
+
+/*
+La expresión regular "/[aeiou]/g" busca todas las vocales en el texto y crea un conjunto con todas las coincidencias.
+Por cada coincidencia, se llama a la función reemplazo(vocal). JavaScript pasa la vocal implícitamente a la función. No es necesario que la especifiquemos*/
+function remplazarVocales() {
+  texto_a_encriptar = texto_a_encriptar.replace(/[aeiou]/g, reemplazo);
+}
+
+/*
+En la función reemplazo(vocal), utilizamos el método find() en llave_valor. La función de flecha que pasamos como argumento se ejecutará para cada uno de los subarrays de la matriz llave_valor.
+La funcion flecha (subarray) => subarray[0] === vocal; es una forma abreviada de escribir una función que recibe un parámetro (subarray) y comprueba si el primer elemento de ese subarray (subarray[0]) es igual a la vocal que recibimos.
+Si la vocal es igual al primer elemento del subarray, almacenamos ese subarray en la variable reemplazo. Luego, retornamos el segundo elemento del subarray, que es el valor de reemplazo correspondiente a la vocal.
+*/
+function reemplazo(vocal) {
+  let reemplazo = llave_valor.find((subarray) => subarray[0] === vocal);
+  return reemplazo[1];
+}
+
+function mostrarResultado(texto) {
+  let texarea_copiar = document.getElementById("texarea_copiar");
+  texarea_copiar.value = texto;
 }

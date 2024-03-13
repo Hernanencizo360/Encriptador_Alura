@@ -63,6 +63,7 @@ let texto_a_encriptar, texto_a_desencriptar;
 //f(x) PROPIAMENTE DICHA DE ENCRIPTAR
 function encriptar() {
   try {
+    limpiarTextarea("texto_a_desencriptar");
     //capturo el texto
     capturarTextoAEncriptar();
     //validar el texto.
@@ -162,6 +163,7 @@ function mostrarResultado(texto) {
 //f(x) PROPIAMENTE DICHA DE DESENCRIPTAR
 function desencriptar() {
   try {
+    limpiarTextarea("texto_a_encriptar");
     //capturo el texto
     capturarTextoADesencriptar();
     //validar el texto.
@@ -193,4 +195,13 @@ function desencriptarTexto() {
   });
 }
 
-/* TODO: Funcion para copiar el texto y una funcion para habilitarla y desahabilitarla */
+/* TODO: Funcion para copiar el texto y una funcion para habilitarla y desahabilitarla - tambien falta la opcion de limpiar los textarea cuando pasamos de encriptar a desencriptar y viceversa*/
+
+function copiarContenido() {
+  let content = document.getElementById("textarea_copiar");
+
+  content.select();
+  document.execCommand("copy");
+
+  alert("Copiado!");
+}

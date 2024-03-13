@@ -19,7 +19,7 @@ function mostrarArticleEncriptar() {
 function mostrarArticleDesencriptar() {
   let article = document.getElementById("article_desencriptar");
 
-  ocultarContenido("article_desencriptar");
+  ocultarContenido("article_encriptar");
   article.classList.remove("oculta");
 
   mostrarArticleCopiar();
@@ -75,23 +75,6 @@ function encriptar() {
   } catch (error) {
     alert(error.message);
     limpiarTextarea("texto_a_encriptar");
-  }
-}
-
-//f(x) PROPIAMENTE DICHA DE DESENCRIPTAR
-function desencriptar() {
-  try {
-    //capturo el texto
-    capturarTextoADesencriptar();
-    //validar el texto.
-    validarTexto(texto_a_desencriptar);
-
-    //Si es valido remplazar los valores;
-    /* Por ahor lo mostramos solo por consola */
-    console.log(`El texto a desencriptar es: ${texto_a_desencriptar}`);
-  } catch (error) {
-    alert(error.message);
-    limpiarTextarea("texto_a_desencriptar");
   }
 }
 
@@ -172,6 +155,42 @@ function reemplazo(vocal) {
 }
 
 function mostrarResultado(texto) {
-  let texarea_copiar = document.getElementById("texarea_copiar");
+  let texarea_copiar = document.getElementById("textarea_copiar");
   texarea_copiar.value = texto;
 }
+
+//f(x) PROPIAMENTE DICHA DE DESENCRIPTAR
+function desencriptar() {
+  try {
+    //capturo el texto
+    capturarTextoADesencriptar();
+    //validar el texto.
+    validarTexto(texto_a_desencriptar);
+
+    //Si es valido remplazar los valores;
+    /* Por ahor lo mostramos solo por consola */
+    desencriptarTexto();
+    mostrarResultado(texto_a_desencriptar);
+  } catch (error) {
+    alert(error.message);
+    limpiarTextarea("texto_a_desencriptar");
+  }
+}
+
+/* Desarrollo de la logica para desencriptar */
+function desencriptarTexto() {
+  // Itera sobre cada sub-array en llave_valor
+  llave_valor.forEach(function (subarray) {
+    // Extrae el valor desencriptado y encriptado de cada sub-array
+    let vocal = subarray[0];
+    let frase = subarray[1];
+
+    // Crea una expresión regular para buscar todas las ocurrencias del valor encriptado en el texto
+    let regex = new RegExp(frase, "g");
+
+    // Reemplaza todas las ocurrencias del valor encriptado por el valor desencriptado en el texto
+    texto_a_desencriptar = texto_a_desencriptar.replace(regex, vocal);
+  });
+}
+
+/* TODO: Funcion para copiar el texto y una funcion para habilitarla y desahabilitarla */

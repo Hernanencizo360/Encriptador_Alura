@@ -135,7 +135,7 @@ function contieneCaracteresEspeciales(texto) {
 //f(x) para limpiar textarea
 function limpiarTextarea(id) {
   let textarea = document.getElementById(id);
-  textarea.value = "";
+  textarea.value = " ";
 }
 
 /*
@@ -195,8 +195,7 @@ function desencriptarTexto() {
   });
 }
 
-/* TODO: Funcion para copiar el texto y una funcion para habilitarla y desahabilitarla - tambien falta la opcion de limpiar los textarea cuando pasamos de encriptar a desencriptar y viceversa*/
-
+/* Funcion para copiar el texto*/
 function copiarContenido() {
   let content = document.getElementById("textarea_copiar");
 
@@ -204,4 +203,9 @@ function copiarContenido() {
   document.execCommand("copy");
 
   alert("Copiado!");
+  limpiarTextarea("textarea_copiar");
 }
+
+/*
+TODO: Funcion para habilitarla y desahabilitarla button -> copiar
+*/

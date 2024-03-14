@@ -4,40 +4,41 @@
  * estan asociadas a los btns de la sección Home.
  ****************************************** */
 function mostrarArticleEncriptar() {
-  let articleEncriptar = document.getElementById("article_encriptar");
-
-  //Antes de activar el display llamo al ocultarContenido para ocultar el articulo desencriptar si es que esta visible;
   ocultarContenido("article_desencriptar");
 
   //remuevo la clase oculta para mostrar en pantalla;
-  articleEncriptar.classList.remove("oculta");
+  mostrarContenido("article_encriptar");
+  mostrarContenido("article_copiar");
 
-  mostrarArticleCopiar();
   dirigirASeccion();
 }
 
 function mostrarArticleDesencriptar() {
-  let article = document.getElementById("article_desencriptar");
-
   ocultarContenido("article_encriptar");
-  article.classList.remove("oculta");
 
-  mostrarArticleCopiar();
+  mostrarContenido("article_desencriptar");
+  mostrarContenido("article_copiar");
+
   dirigirASeccion();
 }
 
 // F(x) para ocultar contenido si tiene no tiene la clase oculta(display:none) se la agrega.
 function ocultarContenido(id) {
-  let articulo = document.getElementById(id);
-  if (!articulo.classList.contains("oculta")) {
-    articulo.classList.add("oculta");
+  let contenido = document.getElementById(id);
+  if (!contenido.classList.contains("oculta")) {
+    contenido.classList.add("oculta");
   }
 }
 
-function mostrarArticleCopiar() {
+function mostrarContenido(id) {
+  let contenido = document.getElementById(id);
+  contenido.classList.remove("oculta");
+}
+
+/* function mostrarArticleCopiar() {
   let articleCopiar = document.getElementById("article_copiar");
   articleCopiar.classList.remove("oculta");
-}
+} */
 
 function dirigirASeccion() {
   let irASeccion = document.getElementById("seccion__encriptar");
@@ -71,6 +72,7 @@ function encriptar() {
 
     remplazarVocales();
     mostrarResultado(texto_a_encriptar);
+    mostrarContenido("btn_copiar");
 
     /*Funcion para retornar el valor al texarea copiar* */
   } catch (error) {
@@ -173,6 +175,7 @@ function desencriptar() {
     /* Por ahor lo mostramos solo por consola */
     desencriptarTexto();
     mostrarResultado(texto_a_desencriptar);
+    mostrarContenido("btn_copiar");
   } catch (error) {
     alert(error.message);
     limpiarTextarea("texto_a_desencriptar");
@@ -204,6 +207,7 @@ function copiarContenido() {
 
   alert("Copiado!");
   limpiarTextarea("textarea_copiar");
+  ocultarContenido("btn_copiar");
 }
 
 /*

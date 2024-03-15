@@ -210,6 +210,16 @@ function copiarContenido() {
   ocultarContenido("btn_copiar");
 }
 
+/* F(x) para cambiar el año dinamicamente */
+function actualizarAnio() {
+  let anio, anioActual;
+  anio = document.getElementById("anioActualizar");
+  anioActual = new Date().getFullYear();
+
+  anio.textContent = anioActual;
+}
+actualizarAnio();
+
 /*
 TODO: Funcion para habilitarla y desahabilitarla button -> copiar
 */

@@ -200,14 +200,18 @@ function desencriptarTexto() {
 
 /* Funcion para copiar el texto*/
 function copiarContenido() {
-  let content = document.getElementById("textarea_copiar");
+  let contenido = document.getElementById("textarea_copiar").value;
 
-  content.select();
-  document.execCommand("copy");
-
-  alert("Copiado!");
-  limpiarTextarea("textarea_copiar");
-  ocultarContenido("btn_copiar");
+  navigator.clipboard
+    .writeText(contenido)
+    .then(() => {
+      alert("¡Contenido copiado!");
+      limpiarTextarea("textarea_copiar");
+      ocultarContenido("btn_copiar");
+    })
+    .catch((err) => {
+      console.error("Error al copiar el contenido: ", err);
+    });
 }
 
 /* F(x) para cambiar el año dinamicamente */

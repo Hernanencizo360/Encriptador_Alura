@@ -25,7 +25,8 @@ Como funcionalidades adicionales, hemos implementado:
 
 ## Visuales 👀
 
-Insertar aquí capturas de pantalla o demos que muestren la funcionalidad del proyecto.
+![Captura de Pantalla](visuales/Pantalla_Principal.png)
+![Captura de Pantalla](visuales/Enciptar_Principio.png)
 
 ### Demo
 
@@ -79,7 +80,7 @@ Si tienes algún problema o sugerencia, por favor abre un problema [aquí](https
 
 - **[Hernán Eladio Encizo](https://github.com/Hernanencizo360)** - _Trabajo inicial_
 
-## Links 🔗 
+## Links 🔗
 
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hernanencizo360)
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/hernanencizo360)

@@ -26,16 +26,12 @@ Como funcionalidades adicionales, hemos implementado:
 ## Visuales 👀
 
 ![Captura de Pantalla](visuales/01-Pantalla_Principal.png)
-![Captura de Pantalla](visuales/02-Enciptar_Principio.png)
-![Captura de Pantalla](visuales/03-Encriptar_Final.png)
-![Captura de Pantalla](visuales/04-Desencriptar_final.png)
-![Captura de Pantalla](visuales/05-Encriptar_Copiar.png)
-![Captura de Pantalla](visuales/06-Requisitos_About.png)
-![Captura de Pantalla](visuales/07-Footer.png)
-![Captura de Pantalla](visuales/08-Responsive_890_inicio.png)
-![Captura de Pantalla](visuales/09-Responsive_890_fin.png)
-![Captura de Pantalla](visuales/10-Responsive_400_fin.png)
-![Captura de Pantalla](visuales/11-Responsive_400_inicio.png)
+![Captura de Pantalla](visuales/02-Desencriptar_final.png)
+![Captura de Pantalla](visuales/03-Encriptar_Copiar.png)
+![Captura de Pantalla](visuales/04-Requisitos_About.png)
+![Captura de Pantalla](visuales/05-Footer.png)
+![Captura de Pantalla](visuales/06-Responsive_400_fin.png)
+![Captura de Pantalla](visuales/07-Responsive_400_inicio.png)
 
 ### Demo
 

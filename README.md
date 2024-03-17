@@ -8,9 +8,9 @@ Este proyecto consiste en una aplicación web que permite encriptar y desencript
 
 La aplicación toma un texto como entrada y lo encripta según las siguientes reglas:
 
+- La letra "a" se convierte en "ai".
 - La letra "e" se convierte en "enter".
 - La letra "i" se convierte en "imes".
-- La letra "a" se convierte en "ai".
 - La letra "o" se convierte en "ober".
 - La letra "u" se convierte en "ufat".
 
@@ -31,7 +31,7 @@ Insertar aquí capturas de pantalla o demos que muestren la funcionalidad del pr
 
 Insertar GIF o enlace a la demo.
 
-## Prerrequisitos 📋
+## Pre-requisitos 📋
 
 Asegúrate de tener instalado lo siguiente:
 
@@ -58,7 +58,7 @@ Una vez que tengas el proyecto en tu máquina local, puedes abrir el archivo ind
 
 ## Hoja de Ruta 🗺️
 
-En esta sección se detallan las ideas, mejoras planificadas y actualizaciones futuras para el proyecto.
+Ideas, mejoras planificadas y actualizaciones futuras para el proyecto.
 
 ### Próximos Pasos
 
@@ -79,7 +79,7 @@ Si tienes algún problema o sugerencia, por favor abre un problema [aquí](https
 
 - **[Hernán Eladio Encizo](https://github.com/Hernanencizo360)** - _Trabajo inicial_
 
-## 🔗 Links
+## Links 🔗 
 
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hernanencizo360)
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/hernanencizo360)

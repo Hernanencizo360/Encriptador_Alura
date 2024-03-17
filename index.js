@@ -101,7 +101,7 @@ function validarTexto(texto) {
 
     //Si pasa todas simplemente es valido y continuamos con la secuencia
   } catch (error) {
-    throw new Error(error);
+    throw new Error(`${error} \nPara más información lea nuestros Requisitos.`);
   }
 }
 

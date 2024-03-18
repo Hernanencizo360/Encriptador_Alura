@@ -18,7 +18,7 @@ Además, permite desencriptar texto encriptado siguiendo el mismo algoritmo.
 
 ## Funcionalidades Extras 🚀
 
-Como funcionalidades adicionales, hemos implementado:
+Como funcionalidades adicionales, se ha implementado:
 
 - Un botón que copia el texto encriptado/desencriptado al portapapeles.
 - La funcionalidad de copiado equivale a la combinación de teclas "Ctrl+C" o la opción "copiar" del menú de las aplicaciones.
@@ -68,8 +68,6 @@ Una vez que tengas el proyecto en tu máquina local, puedes abrir el archivo ind
 
 Ideas, mejoras planificadas y actualizaciones futuras para el proyecto.
 
-### Próximos Pasos
-
 1. **Pulir el código:** Mejorar la legibilidad, organización y estructura del código para que sea más limpio y mantenible.
 2. **Mejorar el responsive:** Ajustar los estilos y tamaños para garantizar una experiencia consistente en diferentes dispositivos y tamaños de pantalla.
 3. **Agregar un botón de pegado:** Implementar un botón que permita al usuario pegar el contenido copiado, junto con todas las funcionalidades necesarias para su correcto funcionamiento.
@@ -77,17 +75,17 @@ Ideas, mejoras planificadas y actualizaciones futuras para el proyecto.
 
 ## Versionado 📌
 
-Usamos [Git](https://git-scm.com) para el control de versiones. Puedes revisar el historial de commits en este repositorio para ver las diferentes versiones del proyecto.
+Se uso [Git](https://git-scm.com) para el control de versiones. Puedes revisar el historial de commits en este repositorio para ver las diferentes versiones del proyecto.
 
 ## Soporte 🤝
 
 Si tienes algún problema o sugerencia, por favor abre un problema [aquí](https://github.com/Hernanencizo360/Encriptador_Alura/issues).
 
-## Autores ✒️
+## Autor ✒️
 
 - **[Hernán Eladio Encizo](https://github.com/Hernanencizo360)** - _Trabajo inicial_
 
-## Links 🔗
+## Links de Interés 🔗
 
 [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Hernanencizo360)
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/hernanencizo360)

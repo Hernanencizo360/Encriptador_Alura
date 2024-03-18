@@ -30,12 +30,14 @@ Como funcionalidades adicionales, hemos implementado:
 ![Captura de Pantalla](visuales/03-Encriptar_Copiar.png)
 ![Captura de Pantalla](visuales/04-Requisitos_About.png)
 ![Captura de Pantalla](visuales/05-Footer.png)
-![Captura de Pantalla](visuales/06-Responsive_400_fin.png)
-![Captura de Pantalla](visuales/07-Responsive_400_inicio.png)
+![Captura de Pantalla](visuales/06-Responsive_400_inicio.png)
+![Captura de Pantalla](visuales/07-Responsive_400_fin.png)
 
 ### Demo
 
-Insertar GIF o enlace a la demo.
+### Video Demo
+
+[![Video Demo](visuales/video_demo.gif)](https://youtu.be/Cnp1XvuUUnU)
 
 ## Pre-requisitos 📋
 

@@ -33,7 +33,9 @@ Como funcionalidades adicionales, hemos implementado:
 ![Captura de Pantalla](visuales/06-Responsive_400_inicio.png)
 ![Captura de Pantalla](visuales/07-Responsive_400_fin.png)
 
-### Video Demo
+### Video Demo 👇
+
+- Haga click en el gif y será direccionado...
 
 [![Video Demo](visuales/video_demo.gif)](https://youtu.be/Cnp1XvuUUnU)
 

@@ -35,7 +35,7 @@ Como funcionalidades adicionales, hemos implementado:
 
 ### Video Demo 👇
 
-- Haga click en el gif y será direccionado...
+- Haga click [aquí](https://youtu.be/Cnp1XvuUUnU).
 
 [![Video Demo](visuales/video_demo.gif)](https://youtu.be/Cnp1XvuUUnU)
 

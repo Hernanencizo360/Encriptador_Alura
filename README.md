@@ -26,9 +26,7 @@ Como funcionalidades adicionales, se ha implementado:
 ## Visuales 👀
 
 ![Captura de Pantalla](visuales/01-Pantalla_Principal.png)
-![Captura de Pantalla](visuales/02-Desencriptar_final.png)
 ![Captura de Pantalla](visuales/03-Encriptar_Copiar.png)
-![Captura de Pantalla](visuales/04-Requisitos_About.png)
 ![Captura de Pantalla](visuales/05-Footer.png)
 ![Captura de Pantalla](visuales/06-Responsive_400_inicio.png)
 ![Captura de Pantalla](visuales/07-Responsive_400_fin.png)
@@ -91,6 +89,9 @@ Si tienes algún problema o sugerencia, por favor abre un problema [aquí](https
 [![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/hernanencizo360)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/hernanencizo360)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/hern%C3%A1n-encizo-b3b355229?original_referer=)
+
+### GitHub Pages 🔓
+Prueba el proyecto [aquí](https://hernanencizo360.github.io/Encriptador_Alura/)
 
 ## Licencia 📄
 
